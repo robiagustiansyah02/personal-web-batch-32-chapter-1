@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(201, 199, 199, 0.856);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+nav {
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    height: 7vh;
+}
+
+nav div {
+    display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
+    align-items: center;
+    
+}
+
+nav .left-side {
+    flex: 50%;
+}
+
+nav .nav-active {
+    color: #ec4d37;
+    font-weight: 600;
+}
+
+nav .right-side {
+    flex: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .right-side a {
+    background-color: orangered;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.container-main {
+    display: flex;
+    
+    height: 93vh;
+    justify-content: center;
+    align-items: center;  
+}
+
+.container-content {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container-content .left-side {
+    flex: 50%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.container-content .right-side {
+    flex: 50%;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 50px;
+    
+}
+
+.container-content .left-side .person-dowload {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    flex: 1;
+}
+
+.container-content .left-side .person-dowload a{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.container-content .left-side .person-dowload img {
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.container-content .left-side .sosmed{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.container-content .left-side .sosmed img {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.container-content .right-side .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    margin: auto;
+    padding: 20px
+}
+
+.container-content .right-side .card img {
+    width: 300px;
+    height: 300px;
+    
+}
+
+.container-content .right-side .card p {
+    display: flex;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.form-contact {
+    height: 93vh;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contact .container-form h1 {
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.form-contact .container-form label {
+    font-size: 20px;
+    font-weight:400;
+}
+
+.form-contact .container-form input,select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;   
+}
+
+.form-contact .container-form textarea {
+    width: 100%; 
+    background-color: white; 
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    height: 120px;
+    resize: none;
+}
+
+.form-contact .container-form button {
+    padding: 5px 30px; 
+    background-color: rgba(8, 8, 8, 0.952); 
+    border: none; 
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    margin-left: 400px; 
+    cursor: pointer;
+}
+
+    /* BLOG STYLE */
+.blog-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    }
+    
+.blog-form .form-container {
+    width: 500px;
+    }
+    
+.blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    }
+    
+.blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+    }
+    
+.blog-form form input,textarea,select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    }
+    
+.blog-form form textarea {
+    height: 250px;
+    }
+    
+.blog-form form .input-blog-image-group {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+    
+.blog-form form .input-blog-image-group label p {
+    font-size: 15px;
+    }
+    
+.blog-form form .input-blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+.blog-form form .button-group {
+    text-align: right;
+    }
+    
+.blog-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #ec4d37;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    }
+    
+.blog hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+.blog .project {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 30px;
+    text-align: center;
+    background-color: white;
+    font-size: 25px;
+}
+    
+    /* Blog list */
+.blog .blog-list {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #fff;
+    }
+
+.blog .blog-list .blog-list-item {
+        margin: 80px;
+        flex: 1;
+    }
+    
+.blog .blog-list .blog-list-item {
+    width: 80%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+.blog .blog-list .blog-list-item .blog-image {
+    flex: 1;
+    }
+    
+.blog .blog-list .blog-list-item .blog-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    }
+    
+.blog .blog-list .blog-list-item .blog-content {
+    padding-left: 20px;
+    flex: 2;
+    }
+    
+.blog .blog-list .btn-group {
+    text-align:center;
+    margin-bottom: 20px;
+    }
+    
+.blog .blog-list .btn-group .btn-edit {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+    text-decoration: none;
+    color: black;
+    }
+    
+.blog .blog-list .btn-group .btn-post {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #ec4d37;
+    color: #fff;
+    text-decoration: none;
+    color: white;
+    }
+    
+.blog .blog-list h1 a {
+    text-decoration: none;
+    color: #000000;
+    }
+    
+.blog .blog-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0%;
+    }
+    
+.blog .blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    }
+
+
+    
+    /* Blog Detail */
+.blog-detail {
+        display: flex;
+        justify-content: center;
+        }
+        
+.blog-detail-container {
+        width: 80%;
+        margin: 40px 0;
+        }
+        
+.blog-detail-container img {
+        width: 100%;
+        }
+        
+.blog-detail-container h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 120%;
+        margin-bottom: 15px;
+        }
+        
+.blog-detail-container .author {
+        font-weight: 100;
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 20px;
+        }
+        
+.blog-detail-container p {
+        margin-top: 40px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: justify;
+        }
