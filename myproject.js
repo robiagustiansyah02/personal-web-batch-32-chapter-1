@@ -129,6 +129,24 @@ function getDistanceTime(time) {
   }
 }
 
+$(document).ready(function(){
+   $("#fromDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+       var minDate = new Date(selected.date.valueOf());
+       $('#toDate').datepicker('setStartDate', minDate);
+   });
+
+   $("#toDate").datepicker({
+       format: 'dd-mm-yyyy',
+       autoclose: true,
+   }).on('changeDate', function (selected) {
+           var minDate = new Date(selected.date.valueOf());
+           $('#fromDate').datepicker('setEndDate', minDate);
+   });
+});
+
 // setInterval(function(){
 //   renderBlog()
 // }, 1000)
