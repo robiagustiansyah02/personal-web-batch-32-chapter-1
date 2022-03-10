@@ -1,109 +1,109 @@
 <html>
+
 <head>
-        <title>Personal Web</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="myproject.js"></script>
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
-  <body>
-           
-        <nav>
 
-          <div class="left-side">
-            <img src="assets/logo.png">
+<body>
 
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="myproject.html" class="nav-active">My Project</a></li>
-              </ul>
-          </div>
+    <nav>
 
-          <div class="right-side">
-              <a href="contact.html">Contact Me</a>
-          </div>
+        <div class="left-side">
+            <img src="F:\BOATCAMP DUMBWAYS BATCH 32\CHAPTER 1\logo.png">
 
-        </nav>
-        
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myproject.html" class="nav-active">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+    </nav>
+
     <!-- Blog -->
     <!-- Form -->
     <div class="blog">
 
-      <div class="blog-form">
-        <div class="form-container">
-          <form onsubmit="addBlog(event)">
-            <h1>ADD MY PROJECT</h1>
-            <div>
-              <label for="input-blog-title">Title</label>
-              <input id="input-blog-title" />
-            </div>
-            <div>
-              <label for="input-blog-content">Content</label>
-              <textarea id="input-blog-content"></textarea>
-            </div>
-            <div>
-              <label>Upload Image</label>
-              <div class="input-blog-image-group">
-                <label for="input-blog-image">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div>
+                        <label for="input-blog-title">Title</label>
+                        <input id="input-blog-title" />
+                    </div>
+                    <div>
+                        <label for="input-blog-content">Content</label>
+                        <textarea id="input-blog-content"></textarea>
+                    </div>
+                    <!-- <div class="check-box"> -->
+                    <!-- <form action="/action_page.php"> -->
+                    <div class="row">
+                        <div class="row2">
+                            <div class="row3">
+                                <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>
+                            </div>
+                            <div class="row3">
+                                <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="row3">
+                                <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>
+                            </div>
+                            <div class="row3">
+                                <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- </form>
+            </div> -->
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="input-blog-image-group">
+                            <label for="input-blog-image">
                   <p>Attach File</p>
-                  <img src="assets/file.png" alt="file" />
+                  <img src="assets/file.png" alt="file"/>
                 </label>
-                <input type="file" id="input-blog-image" hidden/>
-              </div>
+                            <input type="file" id="input-blog-image" hidden />
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" onclick="addBlog()">Post Blog</button>
+                    </div>
+                </form>
             </div>
-            <div class="button-group">
-              <button type="button" onclick="addBlog()">Post Project</button>
-            </div>
-          </form>
         </div>
-      </div>
 
-      <hr class="line" />
-      
-      <div class="project">
-        <h1 style="margin: 0%;">MY PROJECT</h1>
-      </div>
-      
+        <hr class="line" />
 
-      <div id="contents" class="blog-list">
-        <!-- dynamic content would be here -->
-        
-        <div class="blog-list-item">
-          <div class="blog-image">
-            <img src="assets/blog-img.png" alt="" />
-          </div>
-          <div class="blog-content">
-            <div style="text-align: right; color: grey;">
-              1 hour ago
-            </div>
-            <h1>
-              <a href="blog-detail.html" target="_blank"
-                >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a
-              >
-            </h1>
-            <div class="detail-blog-content">
-              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
-            </div>
-            <p>
-              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
-              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
-              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
-              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Quam, molestiae
-              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
-              eligendi debitis?
-            </p>
-            <div class="btn-group">
-              <a href="#" class="btn-edit">Edit Post</a>
-              <a href="#" class="btn-post">Delete Blog</a>
-            </div>
-          </div>
+        <div class="project">
+            <h1 style="margin: 0%;">MY PROJECT</h1>
         </div>
-        
-        
 
-      </div>
+
+        <div id="contents" class="blog-list">
+            <!-- dynamic content would be here -->
+        </div>
 
     </div>
 
-  </body>
+
+    <script src="blog.js"></script>
+
+</body>
+
 </html>

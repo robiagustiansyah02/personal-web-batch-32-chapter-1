@@ -1,50 +1,53 @@
 <html>
+
 <head>
-        <title>Personal Web</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="contact.js"></script>
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="index.js"></script>
 </head>
-  <body>
-           
-        <nav>
 
-          <div class="left-side">
-            <img src="assets/logo.png">
+<body>
 
-              <ul>
-                  <li><a href="index.html" >Home</a></li>
-                  <li><a href="myproject.html" >My Project</a></li>
-              </ul>
-          </div>
+    <nav>
 
-          <div class="right-side">
-              <a href="contact.html">Contact Me</a>
-          </div>
+        <div class="left-side">
+            <img src="F:\BOATCAMP DUMBWAYS BATCH 32\CHAPTER 1\logo.png">
 
-        </nav>
+            <ul>
+                <li style="font-weight: bold;"><a href="index.html">Home</a></li>
+                <li><a href="myproject.html">My Project</a></li>
+            </ul>
+        </div>
 
-        <div class="form-contact">
-            <div class="container-form"> 
-              <form>
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+    </nav>
+
+    <div class="form-contact">
+        <div class="container-form">
+            <form>
                 <div>
                     <h1>GET IN TOUCH</h1>
-                  <label>Name</label>
-                  <input id="input-name" type="text">
+                    <label>Name</label>
+                    <input id="input-name" type="text">
                 </div>
 
                 <div>
-                  <label>Email</label>
-                  <input id="input-email" type="text">
+                    <label>Email</label>
+                    <input id="input-email" type="text">
                 </div>
 
                 <div>
-                  <label>Phone Number</label>
-                  <input id="input-phone" type="text">
+                    <label>Phone Number</label>
+                    <input id="input-phone" type="text">
                 </div>
 
                 <div>
-                  <label>Subject</label>
+                    <label>Subject</label>
                     <select id="input-subject">
                     <option hidden></option>
                     <option >Let's Talk</option>
@@ -54,18 +57,16 @@
                 </div>
 
                 <div>
-                  <label>Your Message</label>
-                  <textarea id="input-message"></textarea>
+                    <label>Your Message</label>
+                    <textarea id="input-message"></textarea>
                 </div>
 
-                <button 
-                  type="button" 
-                  onclick="submitForm()"
-                  >Submit</button>
-              
-              </form>
-            </div>
-          </div>
-        
-  </body>
+                <button type="button" onclick="submitForm()">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
 </html>

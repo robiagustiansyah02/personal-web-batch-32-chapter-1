@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
 body {
     margin: 0%;
     font-family: 'Poppins', sans-serif;
@@ -18,7 +17,6 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    
 }
 
 nav {
@@ -32,7 +30,6 @@ nav div {
     padding-left: 70px;
     padding-right: 70px;
     align-items: center;
-    
 }
 
 nav .left-side {
@@ -49,21 +46,20 @@ nav .right-side {
     justify-content: flex-end;
     align-items: center;
 }
+
 nav .right-side a {
     background-color: orangered;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
     text-decoration: none;
-
 }
 
 .container-main {
     display: flex;
-    
     height: 93vh;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 .container-content {
@@ -90,7 +86,6 @@ nav .right-side a {
     border-radius: 10px;
     transition: 0.3s;
     margin: 50px;
-    
 }
 
 .container-content .left-side .person-dowload {
@@ -100,7 +95,7 @@ nav .right-side a {
     flex: 1;
 }
 
-.container-content .left-side .person-dowload a{
+.container-content .left-side .person-dowload a {
     background-color: black;
     color: white;
     padding: 10px 30px;
@@ -118,7 +113,7 @@ nav .right-side a {
     cursor: pointer;
 }
 
-.container-content .left-side .sosmed{
+.container-content .left-side .sosmed {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
@@ -136,7 +131,7 @@ nav .right-side a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     margin: auto;
     padding: 20px
@@ -145,14 +140,12 @@ nav .right-side a {
 .container-content .right-side .card img {
     width: 300px;
     height: 300px;
-    
 }
 
 .container-content .right-side .card p {
     display: flex;
     text-align: center;
     margin: 5px;
-    
 }
 
 .form-contact {
@@ -167,15 +160,15 @@ nav .right-side a {
 .form-contact .container-form h1 {
     padding: 40px;
     text-align: center;
-    
 }
 
 .form-contact .container-form label {
     font-size: 20px;
-    font-weight:400;
+    font-weight: 400;
 }
 
-.form-contact .container-form input,select {
+.form-contact .container-form input,
+select {
     width: 100%;
     font-size: 20px;
     font-weight: 400;
@@ -184,12 +177,12 @@ nav .right-side a {
     margin-bottom: 20px;
     background: white;
     border: 1px solid #c4c4c4;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 
 .form-contact .container-form textarea {
-    width: 100%; 
-    background-color: white; 
+    width: 100%;
+    background-color: white;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #c4c4c4;
@@ -200,38 +193,42 @@ nav .right-side a {
 }
 
 .form-contact .container-form button {
-    padding: 5px 30px; 
-    background-color: rgba(8, 8, 8, 0.952); 
-    border: none; 
+    padding: 5px 30px;
+    background-color: rgba(8, 8, 8, 0.952);
+    border: none;
     border-radius: 30px;
     color: white;
     font-size: 15px;
-    margin-left: 400px; 
+    margin-left: 400px;
     cursor: pointer;
 }
 
-    /* BLOG STYLE */
+
+/* BLOG STYLE */
+
 .blog-form {
     padding: 50px 0;
     display: flex;
     justify-content: center;
-    }
-    
+}
+
 .blog-form .form-container {
     width: 500px;
-    }
-    
+}
+
 .blog-form .form-container h1 {
     text-align: center;
     margin-bottom: 40px;
-    }
-    
+}
+
 .blog-form form label {
     font-size: 20px;
     font-weight: 400;
-    }
-    
-.blog-form form input,textarea,select {
+}
+
+.blog-form form input,
+textarea,
+select {
     width: 100%;
     font-size: 20px;
     font-weight: 400;
@@ -241,12 +238,32 @@ nav .right-side a {
     background: #f4f3f3;
     border: 1px solid #c4c4c4;
     border-radius: 8px;
-    }
-    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row3 {
+    flex-direction: row;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.blog-form form input.checkbox {
+    width: unset;
+}
+
 .blog-form form textarea {
     height: 250px;
-    }
-    
+}
+
 .blog-form form .input-blog-image-group {
     font-size: 20px;
     font-weight: 400;
@@ -257,23 +274,23 @@ nav .right-side a {
     border: 1px solid #c4c4c4;
     border-radius: 8px;
     cursor: pointer;
-    }
-    
+}
+
 .blog-form form .input-blog-image-group label p {
     font-size: 15px;
-    }
-    
+}
+
 .blog-form form .input-blog-image-group label {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
-    
+}
+
 .blog-form form .button-group {
     text-align: right;
-    }
-    
+}
+
 .blog-form form button {
     margin-top: 50px;
     padding: 8px 20px;
@@ -283,14 +300,15 @@ nav .right-side a {
     border: none;
     color: #fff;
     cursor: pointer;
-    }
-    
+}
+
 .blog hr {
     border: 1px solid #dbdbdb;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    }
+}
+
 .blog .project {
     margin-top: 0%;
     margin-bottom: 0%;
@@ -299,52 +317,49 @@ nav .right-side a {
     background-color: white;
     font-size: 25px;
 }
-    
-    /* Blog list */
+
+
+/* Blog list */
+
 .blog .blog-list {
     padding: 40px;
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    justify-content: center;
     background-color: #fff;
-    }
+}
 
 .blog .blog-list .blog-list-item {
-        margin: 80px;
-        flex: 1;
-    }
-    
-.blog .blog-list .blog-list-item {
-    width: 80%;
+    margin: calc(10%/4);
+    width: 25%;
     padding: 10px 20px;
     margin-bottom: 20px;
     border: 2px solid #dbdbdb;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    }
-    
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .blog .blog-list .blog-list-item .blog-image {
     flex: 1;
-    }
-    
+}
+
 .blog .blog-list .blog-list-item .blog-image img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    }
-    
+}
+
 .blog .blog-list .blog-list-item .blog-content {
     padding-left: 20px;
     flex: 2;
-    }
-    
+}
+
 .blog .blog-list .btn-group {
-    text-align:center;
+    text-align: center;
     margin-bottom: 20px;
-    }
-    
+}
+
 .blog .blog-list .btn-group .btn-edit {
     padding: 5px 10px;
     border: 0;
@@ -352,8 +367,8 @@ nav .right-side a {
     background: #dbdbdb;
     text-decoration: none;
     color: black;
-    }
-    
+}
+
 .blog .blog-list .btn-group .btn-post {
     padding: 5px 10px;
     border: 0;
@@ -362,65 +377,65 @@ nav .right-side a {
     color: #fff;
     text-decoration: none;
     color: white;
-    }
-    
+}
+
 .blog .blog-list h1 a {
     text-decoration: none;
     color: #000000;
-    }
-    
+}
+
 .blog .blog-list .detail-blog-content {
     font-weight: 300;
     font-size: 12px;
     line-height: 20px;
     margin: 0%;
-    }
-    
+}
+
 .blog .blog-list .blog-list-item p {
     margin-top: 20px;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
     text-align: justify;
-    }
+}
 
 
-    
-    /* Blog Detail */
+/* Blog Detail */
+
 .blog-detail {
-        display: flex;
-        justify-content: center;
-        }
-        
+    display: flex;
+    justify-content: center;
+}
+
 .blog-detail-container {
-        width: 80%;
-        margin: 40px 0;
-        }
-        
+    width: 80%;
+    margin: 40px 0;
+}
+
 .blog-detail-container img {
-        width: 100%;
-        }
-        
+    width: 100%;
+}
+
 .blog-detail-container h1 {
-        font-style: normal;
-        font-weight: 800;
-        font-size: 44px;
-        line-height: 120%;
-        margin-bottom: 15px;
-        }
-        
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
 .blog-detail-container .author {
-        font-weight: 100;
-        font-size: 20px;
-        line-height: 120%;
-        margin-bottom: 20px;
-        }
-        
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
 .blog-detail-container p {
-        margin-top: 40px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 140%;
-        text-align: justify;
-        }
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: justify;
+}
