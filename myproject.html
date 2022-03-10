@@ -13,7 +13,7 @@
     <nav>
 
         <div class="left-side">
-            <img src="F:\BOATCAMP DUMBWAYS BATCH 32\CHAPTER 1\logo.png">
+            <img src="assets/logo.png">
 
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -36,11 +36,22 @@
                 <form onsubmit="addBlog(event)">
                     <h1>ADD MY PROJECT</h1>
                     <div>
-                        <label for="input-blog-title">Title</label>
+                        <label for="input-blog-title">Project Name</label>
                         <input id="input-blog-title" />
                     </div>
+                    <div class="date">
+                        <div>
+                            <label for="input-blog-title">Start Date</label>
+                            <input id="input-blog-title" />
+                        </div>
+                        <div>
+                            <label for="input-blog-title">End Date</label>
+                            <input id="input-blog-title" />
+                        </div>
+                    </div>
+                    
                     <div>
-                        <label for="input-blog-content">Content</label>
+                        <label for="input-blog-content">Description</label>
                         <textarea id="input-blog-content"></textarea>
                     </div>
                     <!-- <div class="check-box"> -->
@@ -49,21 +60,21 @@
                         <div class="row2">
                             <div class="row3">
                                 <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                <label for="vehicle1"> I have a bike</label><br>
+                                <label for="vehicle1"> Node Js</label><br>
                             </div>
                             <div class="row3">
                                 <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                <label for="vehicle1"> I have a bike</label><br>
+                                <label for="vehicle1"> React Js</label><br>
                             </div>
                         </div>
                         <div class="row2">
                             <div class="row3">
                                 <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                <label for="vehicle1"> I have a bike</label><br>
+                                <label for="vehicle1"> Node Js</label><br>
                             </div>
                             <div class="row3">
                                 <input type="checkbox" class="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                <label for="vehicle1"> I have a bike</label><br>
+                                <label for="vehicle1"> Type Script</label><br>
                             </div>
                         </div>
                     </div>
@@ -82,7 +93,7 @@
                         </div>
                     </div>
                     <div class="button-group">
-                        <button type="button" onclick="addBlog()">Post Blog</button>
+                        <button type="button" onclick="addBlog()">Post Project</button>
                     </div>
                 </form>
             </div>

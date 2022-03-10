@@ -214,6 +214,7 @@ select {
 
 .blog-form .form-container {
     width: 500px;
+    
 }
 
 .blog-form .form-container h1 {
@@ -238,6 +239,13 @@ select {
     background: #f4f3f3;
     border: 1px solid #c4c4c4;
     border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
 }
 
 .row {
@@ -274,6 +282,7 @@ select {
     border: 1px solid #c4c4c4;
     border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog-form form .input-blog-image-group label p {
@@ -300,6 +309,7 @@ select {
     border: none;
     color: #fff;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog hr {
@@ -356,7 +366,10 @@ select {
 }
 
 .blog .blog-list .btn-group {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
     margin-bottom: 20px;
 }
 

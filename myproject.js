@@ -1,14 +1,14 @@
 let blogs = [];
 let dummy_data = {
-  title: 'Pasar Coding di Indonesia Dinilai Masih Menjanjikan',
-  content: 'Ketimpangan sumber daya manusia (SDM) di sektor digital masih menjadi isu yang belum terpecahkan. Berdasarkan penelitian ManpowerGroup, ketimpangan SDM global, termasuk Indonesia, meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, molestiae numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta, eligendi debitis?',
-  image: 'assets/blog-img.png',
+  title: 'Penyebaran Covid-19 di Indonesia',
+  content: 'Hingga 24 November  2021, Pemerintah Republik Indonesia telah melaporkan  4.254.443 orang terkonfirmasi positif COVID-19 dan ada 143.766 kematian (CFR:  3,4%) terkait COVID-19 yang dilaporkan dan 4.102.700 pasien telah sembuh dari penyakit tersebut,Kementerian Kesehatan Republik Indonesia telah mengambil tindakan untuk meningkatkan upaya penanggulangan COVID-19 di Indonesia, mengacu pada pedoman sementara WHO tentang novel Coronavirus.',
+  image: 'assets/covid19.jpg',
   author: 'Robi Agustiansyah',
   postedAt: new Date()
 };
 
 // DUMMY DATA
-for(let i = 0;i < 6; i++){
+for(let i = 0;i < 3; i++){
   blogs.push(dummy_data)
 }
 
@@ -48,10 +48,7 @@ function renderBlog() {
           <img src="${blogs[i].image}" alt="" />
         </div>
         <div class="blog-content">
-          <div class="btn-group">
-            <a href="#" class="btn-edit">Edit Post</a>
-            <a href="#" class="btn-post">Delete Blog</a>
-          </div>
+        
           <h1>
             <a href="blog-detail.html" target="_blank"
               >${blogs[i].title}</a
@@ -60,9 +57,14 @@ function renderBlog() {
           <div class="detail-blog-content">
             ${getFullTime(blogs[i].postedAt)} | ${blogs[i].author}
           </div>
-          <p>${blogs[i].content}</p>
-          <div style="text-align: right; color: grey;">
+          <div style="text-align: left; color: grey; font-size: small;">
             ${getDistanceTime(blogs[i].postedAt)}
+          </div>
+          <p>${blogs[i].content}</p>
+          
+          <div class="btn-group">
+            <a href="#" class="btn-edit">Edit Project</a>
+            <a href="#" class="btn-post">Delete Project</a>
           </div>
         </div>
       </div>`
